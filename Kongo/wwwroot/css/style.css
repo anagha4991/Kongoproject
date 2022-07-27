@@ -1,0 +1,302 @@
+/*****
+Anagha M J
+24/07/2022
+****/
+/* body {
+    background: #f5d9d5;
+} */
+@font-face {
+    font-family:proxima-nova,sans-serif;
+    src: url(fonts/proximaVara.woff2);
+  }
+#navLinks { 
+    justify-content: flex-end;
+}
+
+#home, #about, #portfolio, #testimonials {
+    margin: 2em 1em 0 1em;
+    font-size: large;
+}
+
+#brand_name {
+    font-size: 1.75em;
+    font-weight: 500;
+    padding-top: 4vh;
+}
+
+#bavbar-button {
+    align-items: flex-end;
+}
+.tv-top-class{
+    box-shadow: none;
+    background: #ebebeb;
+}
+.main-head{
+    font-size: 12px;
+    text-align: center;
+}
+.btn-outline-success {
+    --bs-btn-color: #e7067f;
+    --bs-btn-border-color: #e7067f;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #e7067f;
+    --bs-btn-hover-border-color: #e7067f;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #e7067f;
+    --bs-btn-active-border-color: #e7067f;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #e7067f;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #e7067f;
+    --bs-gradient: none;
+    width:100%;
+}
+.filled-outline{
+   background-color:#e7067f;
+   color: #fff;
+}
+.bg-light{
+    background-color: #fff !important;
+}
+.navlistitems ul li{
+    font-size: 17px;
+}
+.navposition{
+    padding-left:425px;
+    gap: 25px;
+}
+.leftnavgap{
+    gap: 30px;
+}
+  
+.menubars {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  /* Style the active class, and buttons on mouse-over */
+  .active, .menubars:hover {
+    border-bottom: 2px solid #e7067f;
+  }
+
+.maincontent h1{
+    font-size: 30px;
+    line-height: 1.25;
+    font-family:proxima-nova,sans-serif;
+    font-weight: 600;
+}
+.maincontent p{
+    font-size: 16px;
+    line-height: 1.25;
+    font-family:proxima-nova,sans-serif;
+    font-weight: 500;
+}
+.platform {
+    height: auto;
+    padding: 15px!important;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid #F0F0F0;
+    background: #db0779;
+    font-family:proxima-nova,sans-serif;
+    border: 1px solid #F0F0F0!important;
+    border-radius: 20px 20px 5px 5px;
+    color: #fff;
+}
+
+  /* Style the active class, and buttons on mouse-over */
+  .active-select, .platform:hover {
+    cursor: default;
+    border: 1px solid #f59918!important;
+    border-bottom-color: #F0F0F0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: #fff;
+    color: #000;
+  }
+   active
+  .active-select, .button-class:hover {
+    cursor: pointer;
+    border-bottom-color: #F0F0F0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+  }
+input,
+input::placeholder {
+    font-size:11px;
+    cursor: pointer;
+}
+.tv-roomclass{
+    font-size: 12px;
+    font-family:proxima-nova,sans-serif;
+    color: #666;
+    font-weight: 600;
+}
+.flexcus{
+    display: flex;
+    gap:10px;
+}
+.arrowBox{
+    position: relative;
+    /* width:220px; */
+    background: #fff;
+    /* height:40px; */
+    line-height: 40px;
+    margin-bottom:30px; 
+    text-align:center;
+    color:#000;
+    box-shadow: 5px 5px 15px 5px #6666;
+    z-index:1000;
+  }
+  
+  .arrowBox a{
+    color:#fff;
+  }
+  
+  /*top arrow*/
+  
+  .arrow-top:before{
+    position: absolute;
+    top: -10px;
+    left:50%;
+    margin-left: -10px;
+    content:"";
+    display:block;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #FFF; 
+  }
+  .tv-toolboxtext p{
+    font-family:proxima-nova,sans-serif;
+    font-weight:600;
+    font-size: 14px;
+  }
+  .tv-toolboxpadding{
+    padding: 15px 15px 5px 5px;
+  }
+
+  button:focus,
+input:focus{
+  outline: none;
+  box-shadow: none;
+}
+a,
+a:hover{
+  text-decoration: none;
+}
+
+/*--------------------------*/
+.qty-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+.qty-container .input-qty{
+  text-align: center;
+  border: 1px solid #db0779;
+  max-width: 46px;
+  font-size: 12px;
+  color: #666;
+  font-weight: 600;
+}
+.qty-container .qty-btn-minus,
+.qty-container .qty-btn-plus{
+  border: 1px solid #d4d4d4;
+  /* padding: 10px 13px; */
+  font-size: 10px;
+  height: 38px;
+  width: 38px;
+  transition: 0.3s;
+  background:#db0779;
+}
+.qty-container .qty-btn-plus{
+  margin-left: 5px;
+}
+.qty-container .qty-btn-minus{
+  margin-right: 5px;
+}
+
+
+/*---------------------------*/
+.btn-cornered,
+.input-cornered{
+  border-radius: 4px;
+}
+.btn-rounded{
+  border-radius: 50%;
+}
+.input-rounded{
+  border-radius: 50px;
+}
+.flexclass{
+    display: flex;
+}
+.t-check-in, .t-check-out {
+  width: 100% !important;
+}
+.t-check-in, .t-check-out {
+  /* border-color: #ededed; */
+  border: 1px solid #ced4da !important;
+}
+.t-check-out, .t-check-in {
+  border-left-width: 0;
+  /* border-radius: 0 4px 4px 0; */
+  border-radius: 10px !important;
+}
+.custom-width{
+  width: 50%;
+}
+@media only screen and (max-width: 600px) {
+  .px-4-cus {
+    padding-right: .5rem!important;
+    padding-left: .5rem!important;
+  }
+  .mx-4-cus {
+    margin-right: .5rem!important;
+    margin-left: .5rem!important;
+  }
+    .navposition{
+        padding-left:0px;
+        gap: 0px;
+    }
+    .flexcus{
+        display: inline-block;
+        width: 100%;
+    }
+    .hideonmobile{
+        display: none;
+    }
+    .platform {
+        font-size: 11px;
+    }
+    .searchpadding{
+      position: relative;top: 10px !important;
+      width: 100%;
+  }
+  .custom-width {
+    width: 100% !important;
+  }
+ 
+  }
+  /* search.html styles */
+  .searchpadding{
+    position: relative;top: 150px;width: 100%;
+}
+.px-4-cus {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.mx-4-cus {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}

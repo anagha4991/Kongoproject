@@ -1,0 +1,177 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section>
+    <div class="container mt-1 pt-1 mb-4 maincontent">
+        <div class="row">
+            <div class="col-md-1">
+                
+            </div>
+        <div class="col-md-1 hideonmobile">
+            <a href="https://travel.konga.com/"><img src="images/logo.webp" alt=""></a>
+        </div>
+        <div class="col-md-9 py-2 px-4">
+            <h1>Deals from your favorite booking sites</h1>
+            <p>Try searching for a city, a specific hotel, or even a landmark!</p>
+        </div>
+        </div>
+    </div>
+</section>
+<!-- form search section -->
+<section>
+    <div class="container-fluid" style="background-color: #f9fafa;">
+        <div class="container">
+            <div class="row pt-1" id="platformbars">
+                <div class="col-md-10">
+                    <ul style="list-style:none; display:flex;gap:1px;">
+                        <li>
+                            <button class=" btn platform active-select" id="fleettracking">All Stays</button>
+                        </li>
+                        <li>
+                            <button class=" btn platform" id="eld">Hotel</button>
+                        </li>
+                    </ul>
+                </div>   
+            </div>
+            <div class="row">
+
+                <div class="col-md-9 mb-4" style="background-color:#fff;border-radius: 10px;padding: 0;border-bottom:1px solid #ccc;">
+                    <form class="px-4 mx-4">
+                        <div class="flexcus">
+                            <div class="">
+                                <label for="search"></label>
+                                <input class="form-control me-2" type="search" name="search" placeholder="Enter a hotel name or destination" aria-label="Search">
+                            </div>
+                          
+                            
+                            <div class="custom-width">
+                                <div class="t-datepicker">
+                                    <div class="row mt-4">
+                                        <div class="col-lg-6">
+                                            <div class="t-check-in"></div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="t-check-out"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=""  id="show" >
+                                <label for="checkout"><strong>Rooms</strong></label>
+                                <div  class="d-flex button-class active" >
+                                    <ul  style="list-style-type:none;padding: 5px;">    
+                                        <li><i class="fa fa-user" aria-hidden="true" style="color:#e7067f;"></i></li>
+                                    </ul>
+                                    <ul style="list-style-type:none;padding: 0;" class="tv-roomclass">
+                                        <li><span id="submitterroom">0</span> Room</li>
+                                        <li><span id="submitteguests">0</span> Guests</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="px-2 mt-4">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>   
+            </div>
+        </div>
+    </div>
+</section>
+<section style="z-index:1000;">
+    <div class="container-fluid" >
+        <div class="container">           
+            <div class="row">
+                <div class="col-md-9 mb-4">
+                    <div class="row">
+                        <div class="flexcus">
+                            <div class="col-md-2">
+                            </div>
+                            <div class="col-md-2">
+                            </div>
+                            <div class="col-md-3"> 
+                            </div>
+                            <div class="col-md-5 tv-toolboxtext">
+                                <div href="#" class="menu arrowBox arrow-top card" style="display: none;">
+                                    <div class="row tv-toolboxpadding">
+                                        <div class="col-sm-4">
+                                          <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p>Adults</p>
+                                                </div>
+                                            </div>
+                                            <div  class="row">
+                                                <div class="col-md-12">
+                                                    <p>Children</p>
+                                                </div>
+                                            </div>
+                                            <div  class="row">
+                                                <div class="col-md-12">
+                                                    <p>Rooms</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="col-sm-8">           
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="qty-container">
+                                                            <button class="qty-btn-minus btn-primary btn-rounded" type="button"><i style= "color: #fff;" class="fa fa-minus"></i></button>
+                                                            <input type="text" name="qty" value="0" id="adult-val" class="input-qty input-rounded"/>
+                                                            <button class="qty-btn-plus btn-primary btn-rounded" type="button"><i style= "color: #fff;" class="fa fa-plus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div  class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="qty-container">
+                                                            <button class="qty-btn-minus btn-primary btn-rounded" id="childrenagefetcherminus" type="button"><i style= "color: #fff;" class="fa fa-minus"></i></button>
+                                                            <input type="text" name="qty" value="0" id="children-val" class="input-qty input-rounded"/>
+                                                            <button class="qty-btn-plus btn-primary btn-rounded" id="childrenagefetcher" type="button"><i style= "color: #fff;" class="fa fa-plus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div  class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="qty-container">
+                                                            <button class="qty-btn-minus btn-primary btn-rounded" type="button"><i style= "color: #fff;" class="fa fa-minus "></i></button>
+                                                            <input type="text" name="qty" value="0" id="room-val" class="input-qty input-rounded"/>
+                                                            <button class="qty-btn-plus btn-primary btn-rounded" type="button"><i style= "color: #fff;" class="fa fa-plus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="row tv-toolboxpadding">
+                                        <div class="col-sm-12" style="text-align: left;">           
+                                           <p>Children's Age(Required)</p>
+                                            <fieldset id="showform">
+                                               
+                                            </fieldset>
+                                        </div>
+                                    </div> -->
+                                    <hr>
+                                    <div class="row mb-4">
+                                        <div class="col-sm-4">
+                                            <button type="button" class="btn btn-outline-success" id="cancelbuttonfor">cancel</button>
+                                        </div>
+                                        <div class="col-sm-4"> 
+                                        </div>
+                                        <div class="col-sm-4"> 
+                                            <button type="button" class="btn filled-outline" id="applybuttonfor">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Kongo</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+      <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+       <link rel="stylesheet" href="~/theme/css/t-datepicker.min.css" asp-append-version="true" />
+       <link rel="stylesheet" href="~/theme/css/t-datepicker-yellow.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Kongo.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <section>
+        <div class="tv-top-class">
+            <div class="container">
+                <div class="main-head py-3">                                               
+                    <i class="fa fa-user" aria-hidden="true" style="color:#e7067f;"></i> 
+                    <b>Customer Support</b> (+234) 8094605555, (+234) 7080635700                   
+                 </div>   
+            </div>
+        </div>
+    </section>
+    <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container-fluid navlistitems">
+            <a href="#" class="navbar-brand"><img src="images/logo.webp" alt="Logo"></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navposition"  id="menubardiv">
+                    <li class="nav-item menubars active">
+                        <a href="#" class="nav-link  ">Stays</a>
+                    </li>
+                    <li class="nav-item menubars">
+                        <a href="#" class="nav-link ">Profile</a>
+                    </li>
+                    <li class="nav-item dropdown menubars">
+                        <a href="#" class="nav-link ">Flights</a>
+                    </li>
+                    <li class="nav-item dropdown menubars">
+                        <a href="#" class="nav-link" >Packages</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ms-auto leftnavgap">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Log in</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Menu</a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a href="#" class="dropdown-item">Reports</a>
+                            <a href="#" class="dropdown-item">Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">Logout</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">USD</a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a href="#" class="dropdown-item">Reports</a>
+                            <a href="#" class="dropdown-item">Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">Logout</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" >EN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - Kongo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+     <script src="~/theme/js/t-datepicker.min.js" asp-append-version="true"></script>
+     <script src="~/js/main.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
